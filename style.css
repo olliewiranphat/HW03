@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+        url(https://tinder.com/static/build/ac062d1b428513b9c13d11026d330e34.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    width: 95%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 20px; */
+}
+
+img {
+    cursor: pointer;
+    z-index: 1;
+}
+
+ul {
+    margin-left: -15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.nav>div>ul>li>a:hover {
+    color: deeppink;
+    border-bottom: 2px solid deeppink;
+}
+
+.login {
+    /* border: 1px solid orange; */
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+
+
+}
+
+.login-btn {
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: white;
+    margin-left: 30px;
+    margin-right: -20px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+
+    text-align: center;
+}
+
+
+.login-btn:hover {
+    background-color: rgb(227, 225, 225);
+}
+
+.login>a:hover {
+    color: rgb(227, 225, 225);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+
+    justify-content: center;
+}
+
+.text {
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.acc {
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #c70968, #ff7f50);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.acc:hover {
+    background: linear-gradient(to right, #a32262, #b85531);
+}
+
+footer {
+    /* background-color: #b85531; */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+    width: 95%;
+    padding: 5px 0;
+
+
+}
